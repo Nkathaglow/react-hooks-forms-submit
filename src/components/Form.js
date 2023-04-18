@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Form(props) {
   const [firstName, setFirstName] = useState("Sylvia");
-  const [lastName, setLastName] = useState("Woods");
+  const [lastName, setLastName] = useState("Woods");  
 
   function handleFirstNameChange(event) {
     setFirstName(event.target.value);
@@ -16,7 +16,7 @@ function Form(props) {
     <form>
       <input type="text" onChange={handleFirstNameChange} value={firstName} />
       <input type="text" onChange={handleLastNameChange} value={lastName} />
-      <button type="submit">Submit</button>
+      <button type="Submit">Submit</button>
     </form>
   );
 }
